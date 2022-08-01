@@ -1,8 +1,5 @@
 chrome.runtime.onMessage.addListener(function(message,sender,sendResponse){
-    console.log(message);
     let {content,time} = message;
-    console.log(content)
-    console.log(time);
     setTimeout(function () {
           chrome.notifications.create(
              '',
